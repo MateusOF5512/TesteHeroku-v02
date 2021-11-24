@@ -16,8 +16,6 @@ st.set_page_config(page_title="ODA", page_icon=":eyes:", layout="wide")
 def get_data_vac( path_vac ):
     df = pd.read_csv( path_vac, sep=",", encoding="ISO-8859-1" )
     return df
-
-@st.cache(allow_output_mutation=True)
 def get_data_posto( path_posto ):
     df_posto = pd.read_csv( path_posto, sep=",", encoding="ISO-8859-1" )
     return df_posto
